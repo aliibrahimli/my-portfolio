@@ -1,12 +1,15 @@
 import streamlit as st
-
+from PIL import Image
 
 st.set_page_config(layout="wide")
 
 col1, col2 = st.columns(2)
 
 with col1:
-    st.image("images/photo.png")
+    image =Image.open("images/photo.png")
+    new_image = image.resize((450, 500))
+    st.image(new_image)
+
 with col2:
     st.title("Ali Ibrahimli")
     content = """ I am Ali Ibrahimli, a senior student of computer engineering at Ada University, with 
@@ -19,3 +22,7 @@ with col2:
     I am excited to take on new challenges and make meaningful contributions to the technology industry.
     """
     st.info(content)
+
+content2 = "Below you can find some of the apps I have built in Python. " \
+           "Feel free to contact me!"
+st.write(content2)
