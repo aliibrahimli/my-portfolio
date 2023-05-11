@@ -1,3 +1,3 @@
 # What is this projects?
-Thus us a web app to showcase Python projects.
+This is a web app to showcase Python projects.
 ## Web development
