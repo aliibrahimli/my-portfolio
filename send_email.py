@@ -1,8 +1,9 @@
 import smtplib
 import ssl
 import os
+from dotenv import load_dotenv
 
-import streamlit
+load_dotenv()
 
 def send_email(message):
     host = "smtp.gmail.com"
