@@ -4,7 +4,6 @@ import os
 
 import streamlit
 
-
 def send_email(message):
     host = "smtp.gmail.com"
     port = 465
